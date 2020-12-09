@@ -5,7 +5,7 @@ The ProTRAIT infrastructure will make available prospective, standardized, multi
 
 ### Item lists
 
-The data that is collected for the ProTRAIT registry is described in item lists (.xlsx). These can be found in [this GitLab repository](https://github.com/QRoos/ProTRAIT)
+The data that is collected for the ProTRAIT registry is described in item lists (.xlsx). These can be found in [this GitHub repository](https://github.com/ProTraitInfra/Item-lists)
 
 ### Standard Operating Procedure
 
