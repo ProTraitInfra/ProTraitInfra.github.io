@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>ProTRAIT Standard Operating Procedure (SOP) for setting up the FAIR data stations | ProTRAIT</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="ProTRAIT Standard Operating Procedure (SOP) for setting up the FAIR data stations" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/sop.html" />
+<meta property="og:url" content="http://localhost:4000/sop.html" />
+<meta property="og:site_name" content="ProTRAIT" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"ProTRAIT Standard Operating Procedure (SOP) for setting up the FAIR data stations","url":"http://localhost:4000/sop.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=46ac6bea4066cb248fc144abeea3e63017f08ff8">
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1><b>ProTRAIT</b></h1>
+      <h2 class="project-tagline">IT infrastructure for proton radiotherapy</h2>
+      <a href="https://protraitinfra.github.io" class="btn">Home</a>
+      <a href="https://protraitinfra.github.io/background" class="btn">Background</a>
+      <a href="https://protraitinfra.github.io/lists" class="btn">Item lists</a>
+      <a href="https://protraitinfra.github.io/sop" class="btn">Setting up infrastructure</a>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="protrait-standard-operating-procedure-sop-for-setting-up-the-fair-data-stations">ProTRAIT Standard Operating Procedure (SOP) for setting up the FAIR data stations</h1>
+
+<h2 id="background">Background</h2>
+
+<h3 id="proton-therapy">Proton Therapy</h3>
+
+<p>The first proton therapy treatments took place in the Netherlands towards the end of 2017. Considering heterogeneous protocols and data analysis pipelines, it is of paramount importance to set up the proper infrastructure that can enable a harmonized data collection and analysis platform, including clinical comparisons with photon therapy. Due to its increased accuracy, proton therapy has tremendous potential to reduce the radiation dose to the healthy, tumour-surrounding tissues. In turn, this leads to less radiation induced complications, and a decrease in the formation of secondary tumours.The Netherlands has spearheaded the development of the model-based approach (MBA) for the selection of patients for proton therapy when applied to prevent radiation-induced complications. In MBA, a pre-treatment in-silico planning study is done, comparing proton and photon treatment plans in each individual patient, to determine whether there is a significant difference in dose in the relevant organs at risk (ΔDose), and whether this dose difference translates into an expected benefit in terms of Normal Tissue Complication Probabilities (ΔNTCP). To translate ΔDose into ΔNTCP, NTCP-models are used, which are prediction models describing the relation between dose parameters and the likelihood of radiation-induced complications. The Dutch Society for Radiotherapy and Oncology (NVRO) setup the selection criteria for proton therapy in 2015, taking into account toxicity and NTCP. However, NTCP-models can be affected by changes in the irradiation technique. Therefore, it is paramount to continuously update and validate these NTCP-models in subsequent patient cohorts treated with new techniques. This requires an advanced IT infrastructure that can streamline the use of clinical parameters, the assessment of radiation-induced complications and Patient Reported Outcome Measures (PROMs) at a national level, and that can link these parameters to 3D dose distributions. The Netherlands currently has no such infrastructure. In ProTRAIT, <a href="https://www.go-fair.org/fair-principles/">a Findable, Accessible, Interoperable and Reusable (FAIR) data</a> infrastructure for both clinical and 3D image and 3D dose information will be developed and deployed for proton therapy in the Netherlands. The infrastructure will make available prospective, standardized, multi-centric data from all Dutch proton and a representative group of photon therapy patients.
+As this amount of imaging and clinical data mainly is unstructured, there is a paramount need to install and establish FAIR data stations to the Dutch collaborators on this project(Fig.1).</p>
+
+<h3 id="fair-data-principles">FAIR data principles</h3>
+
+<p>The Personal Health Train’s (PHT) main goal is connecting health data to make them more usable. Personal Heath management requires an increasing amount of personal data, but nowadays this information cannot easily be used as the data are produced and managed by various healthcare providers, authorities and by citizens themselves. These stakeholders collect and manage their data in different ways making the data hard to find and use. Furthermore, personal medical information is very privacy sensitive. As a consequence, personal health data cannot be used easily by citizens themselves, by physicians and by researchers. The personal health train goes to the route of this problem by building FAIR data stations. FAIR protocols show that data are Findable Accessible Interoperable and Reusable. These data stations are connected by tracks which are strictly secured and protected. FAIR data trains are constantly monitored and only trains with the appropriate validation enter a particular station. To secure privacy every data station has rules. Each data owner has access to the secured station and can easily request and control the information. Additionally the data station owner can set rules for who can access the data and how they can be used. With this access the researchers can learn which cancer patients for example can benefit most from proton therapy instead of photon. In this approach the information is accessible for research, prevention and education without the data leaving the data stations. With the Personal Health Train health data become available as individual and institutions maintain the control. Specifically in radiotherapy, a large amount of data is collected for the identification of the target volume for irradiation and the dose distribution calculation. Combining the specific-radiotherapy imaging information in a central national database infrastructure would enable the unlimited possibilities for research in the field of radiotherapy. Therefore, it is crucial to establish a FAIR data infrastructure that supports all radiotherapy-specific data formats as well as clinical information for proton and photon therapy. ProTRAIT will make available prospective, standardized, multi-centric data from photon and all Dutch proton therapy patients.
+Specifically the FAIR data principles can be analyzed to:</p>
+
+<p><strong>F: Findable</strong>: The data has to be found as a first step to use them for both humans and computers. For this reason the metadata has to be assigned with a globally and persistent identifiers, describable with rich metadata</p>
+
+<p><strong>A: Accessible</strong>: Once the researcher finds the data, needs to know the procedure that has to follow to access it including authorization and identification using a standardized protocol.</p>
+
+<p><strong>I: Interoperable</strong>: The data use ontologies and specific vocabularies for the creation of the semantic web model</p>
+
+<p><strong>R: Reusable</strong>: Data are richly describable with really accurate and relevant attributes to enable the reusability of them.</p>
+
+<p>Manual data entry is resource intensive. To reduce this, data recorded in clinical routine will be re-used for the registry. The aim of this work package is to establish FAIR stations at each site (together forming a FAIR backbone) from which the proton therapy registry will be filled in automatically. FAIR data stations will be based on Semantic Web technology (linked data) and will include actual extraction of local data through a link to hospital systems (EHR, treatment planning, Record&amp;Verify etc.) in all participating centres. Open source tools from prior work (e.g. Pentaho, PostgreSQL, CTP, MIA, dcm4chee, D2R and Blazegraph) will be re-used.The FAIR data “stations” will be connected using a distributed learning system from prior work (“track”). In this Docker based system, research questions (“trains”) can be exchanged securely and use the stations’ data. Each station, in principle, will allow all data to be used including the minimal dataset.</p>
+
+<p>ProTRAIT aims to setup proton therapy registries that will be adopted throughout the Netherlands and develop tools for radiotherapy that will enable an unprecedented combination of both DICOM RT and clinical/follow up data and integrated analysis. Specifically, the main goal of ProTRAIT is to set up an IT infrastructure that can support the MBA on a national scale by harmonizing data acquisition(clinical, DICOM RT), making data FAIR and linking data from different sources and centres.</p>
+
+<h4 id="fair-data-stations">FAIR data stations</h4>
+
+<p>FAIR data stations are the locations containing FAIR data. In ProTRAIT case the stations will contain the minimum data elements from each specific treatment site(Head and Neck, Breast, Generic List, etc.). Each data element has an associated license describing what a visiting “train” is allowed to do with that data element. The stations are created and maintained by the appropriate trusted parties and governed by the data owners.</p>
+
+<h4 id="fair-data-trains">FAIR data trains</h4>
+
+<p>‘Trains’ are ‘workflows’ executing specific research questions or use cases that need FAIR data. Trains can be big: ‘Which data elements are most predictive of survival after head and neck cancer given all patients’ treated with protons in the Netherlands?’ or small and personal: ‘Is there a trial that I can join given my specific disease?’ Trains are built and maintained by the researcher(fig.2).</p>
+
+<h2 id="goalpurpose-of-this-document">Goal/purpose of this document</h2>
+
+<p>The goal of this document is to provide the necessary guidance when installing the ProTrait infrastructure via a detailed roadmap. We describe the steps needed prior, during and after the installation of the FAIR data stations in a proton therapy center.</p>
+
+<h2 id="procedures">Procedures</h2>
+
+<h3 id="prior-to-fair-data-station-installation-in-the-clinic">Prior to FAIR data station installation in the clinic</h3>
+
+<p>This section contains information of settings/systems that can be set up prior to the arrival of the ProTRAIT MAASTRO installer team. This can generally be done by the IT specialist of the site itself. If you have questions then please ask your MAASTRO contact.</p>
+
+<h3 id="get-legal-approval">Get legal approval</h3>
+
+<p>A few legal steps need to be taken before a ProTrait FAIR data can be installed.</p>
+
+<ul>
+  <li>A written IRB approval to install the proTRAIT pipeline</li>
+  <li>A written approval from a data security officer</li>
+  <li>A written approval from a privacy officer</li>
+  <li>A written approval from the IT department</li>
+</ul>
+
+<h3 id="perform-a-data-audit-on-your-clinical-systems">Perform a data audit on your clinical system(s)</h3>
+
+<ul>
+  <li>Ensure that data can be extracted in a Postgres database</li>
+  <li>Link the data in your data warehouse to the data elements needed for Protrait (these can be found <a href="https://gitlab.com/UM-CDS/protrait/data-element-lists/-/tree/master/Lists">here</a>)</li>
+</ul>
+
+<h3 id="installation-of-the-fair-data-station">Installation of the FAIR data station</h3>
+
+<ul>
+  <li>Destination Server name: Open Clinica</li>
+  <li>Destination IP: 85.90.67.146 (productie)
+    <ul>
+      <li>85.90.67.153 (sandbox)</li>
+      <li>85.90.73.230(ctp.bmia.nl, DICOM data)</li>
+    </ul>
+  </li>
+  <li>Clinfair Port: 22 (ssh)
+    <ul>
+      <li>80 (http)</li>
+      <li>443 (https)</li>
+      <li>5432 (postgres)</li>
+    </ul>
+  </li>
+  <li>The FAIR data station should have Read and Write access to the directory where the data are located (IP addresses known, permissions granted) to:
+    <ul>
+      <li>The record &amp; verification system (e.g. Mosaiq or Aria)</li>
+      <li>The RT-PACS any other relevant data sources (e.g., research database, trial database, TPS, etc.).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The FAIR data station needs to be installed on an Ubuntu virtual server with the following requirements:</p>
+
+<ul>
+  <li>Operating Service: centos 7</li>
+  <li>Diskspace: 25Gb system and 80 Gb applications</li>
+  <li>RAM memory: minimum 8 GB</li>
+  <li>Software:
+    <ul>
+      <li><a href="https://notepad-plus-plus.org/downloads/v7.8.4/">Notepad++ version 7.8.4</a> or similar</li>
+      <li>or similar</li>
+      <li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository">Docker</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="installing-docker">Installing Docker</h4>
+
+<p>To install Docker, you need to execute the following commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo yum check-update
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+sudo yum install docker
+sudo systemctl start docker
+
+sudo systemctl enable docker
+
+</code></pre></div></div>
+
+<p>Then:</p>
+
+<ul>
+  <li>
+    <p><a href="https://linuxize.com/post/how-to-install-and-use-docker-compose-on-centos-7/">install docker-compose</a>.</p>
+  </li>
+  <li>
+    <p>install git:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo yum install git
+git --version
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>install the GUI: XRDP GNOME</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum groupinstall "GNOME Desktop" "Graphical Administration Tools"
+yum groupinstall "Server with GUI"
+ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target
+reboot
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>clone the ProTRAIT fairifier repository</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Git clone protrait fairifier repo
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>install portainer</p>
+  </li>
+</ul>
+
+<h2 id="arrange-the-following-prior-to-the-online-visit-of-protrait-maastro-installer-team">Arrange the following prior to the online visit of ProTRAIT MAASTRO installer team</h2>
+
+<ul>
+  <li>Provide IP addresses and logins to your ProTRAIT MAASTRO installer team.</li>
+  <li>Provide one or more remote access options for your ProTRAIT MAASTRO installer team to support you (e.g.Microsoft teams).</li>
+</ul>
+
+<h2 id="on-the-installation">On the installation</h2>
+
+<p>During the installation day, the IT person of the clinic with the database knowledge should be present as well as with the data managers who manually enter the Open Clinica data elements. Furthermore, the access to the building, network and server should be guaranteed. Furthermore, the IT person of each institution is responsible for the data warehouse (or similar data storage).</p>
+
+<p>During the on-site visit, we will:</p>
+
+<ul>
+  <li>Provide you with general information about the project and we can answer additional questions if needed.</li>
+  <li>Provide an SQL query to fill the Postgres database with local variables(Clinic specific)</li>
+  <li>Install a Postgres database and a GraphDB triplestore that will automatically update, convert and store your ProTRAIT data as triples. Periodically you will have to manually extract the triples and create a CRF which can be easily uploaded to open Clinica (https://vimeo.com/376380001).</li>
+  <li>Extraction from triple store and OCDI tool guide(<a href="https://trait.health-ri.nl/trait-tools/OpenClinica/Setting-up-OpenClinica/execution-phase/data-entry-data-upload/UserManualOpenClinicadataimporter_version_1_33.docx2.pdf">here</a>)</li>
+</ul>
+
+<h2 id="installation-timeline">Installation timeline</h2>
+
+<p>TBD</p>
+
+<h2 id="after-installation">After installation</h2>
+
+<p>The individual centers are (for now) responsible for management and maintenance of the system. The Maastro team will remain available for support where necessary. For support, it is important that you maintain options for remote access for your ProTRAIT MAASTRO installer.</p>
+
+<h2 id="contact-information">Contact information</h2>
+
+<p>Petros Kalendralis: <a href="mailto:petros.kalendralis@maastro.nl">petros.kalendralis@maastro.nl</a></p>
+
+<p>Matthijs Sloep: [matthijs.sloep@maastro.nl</p>
+
+<p>Dr. Rianne Fijten: <a href="mailto:rianne.fijten@maastro.nl">rianne.fijten@maastro.nl</a></p>
+
+
+      <footer class="site-footer">
+        <!--<span class="site-footer-owner">--> ProTRAIT is maintained by the Clinical Data Science Group at Maastricht University (NL).<!--</span>-->
+      </footer>
+    </main>
+  </body>
+</html>
