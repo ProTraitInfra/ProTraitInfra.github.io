@@ -46,9 +46,9 @@ The FAIR data station needs to be installed on an Ubuntu virtual server with the
   -  or similar
   - [Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository)
 
-#### Installing Docker
+#### Installing prerequisites
 
-To install Docker, you need to execute the following commands:
+- install Docker:
 
 ```
 sudo yum check-update
@@ -60,10 +60,7 @@ sudo yum install docker
 sudo systemctl start docker
 
 sudo systemctl enable docker
-
 ```
-
-Then:
 
 -  [install docker-compose](https://linuxize.com/post/how-to-install-and-use-docker-compose-on-centos-7/).
 
@@ -121,6 +118,6 @@ The individual centers are (for now) responsible for management and maintenance 
 
 Petros Kalendralis: [petros.kalendralis@maastro.nl](mailto:petros.kalendralis@maastro.nl) 
 
-Matthijs Sloep: [matthijs.sloep@maastro.nl
+Matthijs Sloep: [matthijs.sloep@maastro.nl](mailto:matthijs.sloep@maastro.nl)
 
 Dr. Rianne Fijten: [rianne.fijten@maastro.nl](mailto:rianne.fijten@maastro.nl)

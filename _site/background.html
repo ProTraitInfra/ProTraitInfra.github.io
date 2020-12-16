@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=29ce52d49e63099a468a4ddd705c8f3e0c84d681">
+    <link rel="stylesheet" href="/assets/css/style.css?v=8ad80c9a7a93f0898051305cb5d9be62aed240e6">
   </head>
   <body>
     <header class="page-header" role="banner">
@@ -36,6 +36,10 @@
 <h2 id="proton-therapy">Proton Therapy</h2>
 <p>The first proton therapy treatments took place in the Netherlands towards the end of 2017. Considering heterogeneous protocols and data analysis pipelines, it is of paramount importance to set up the proper infrastructure that can enable a harmonized data collection and analysis platform, including clinical comparisons with photon therapy. Due to its increased accuracy, proton therapy has tremendous potential to reduce the radiation dose to the healthy, tumour-surrounding tissues. In turn, this leads to less radiation induced complications, and a decrease in the formation of secondary tumours.The Netherlands has spearheaded the development of the model-based approach (MBA) for the selection of patients for proton therapy when applied to prevent radiation-induced complications. In MBA, a pre-treatment in-silico planning study is done, comparing proton and photon treatment plans in each individual patient, to determine whether there is a significant difference in dose in the relevant organs at risk (ΔDose), and whether this dose difference translates into an expected benefit in terms of Normal Tissue Complication Probabilities (ΔNTCP). To translate ΔDose into ΔNTCP, NTCP-models are used, which are prediction models describing the relation between dose parameters and the likelihood of radiation-induced complications. The Dutch Society for Radiotherapy and Oncology (NVRO) setup the selection criteria for proton therapy in 2015, taking into account toxicity and NTCP. However, NTCP-models can be affected by changes in the irradiation technique. Therefore, it is paramount to continuously update and validate these NTCP-models in subsequent patient cohorts treated with new techniques. This requires an advanced IT infrastructure that can streamline the use of clinical parameters, the assessment of radiation-induced complications and Patient Reported Outcome Measures (PROMs) at a national level, and that can link these parameters to 3D dose distributions. The Netherlands currently has no such infrastructure. In ProTRAIT, <a href="https://www.go-fair.org/fair-principles/">a Findable, Accessible, Interoperable and Reusable (FAIR) data</a> infrastructure for both clinical and 3D image and 3D dose information will be developed and deployed for proton therapy in the Netherlands. The infrastructure will make available prospective, standardized, multi-centric data from all Dutch proton and a representative group of photon therapy patients.
 As this amount of imaging and clinical data mainly is unstructured, there is a paramount need to install and establish FAIR data stations to the Dutch collaborators on this project(Fig.1).</p>
+
+<p><img src="/figures/locationFairDataStations.png" alt="Locations of the FAIR data stations in the Netherlands" title="Locations of the FAIR data stations in the Netherlands" /></p>
+
+<p><strong>Fig.1</strong>: Graphical representation of the first FAIR data stations we are aiming to install and connect across MAASTRO (Maastricht), UMCG (Groningen) and Holland PTC (Delft).</p>
 
 <h2 id="fair-data-principles">FAIR data principles</h2>
 
@@ -61,6 +65,11 @@ Specifically the FAIR data principles can be analyzed to:</p>
 <h3 id="fair-data-trains">FAIR data trains</h3>
 
 <p>‘Trains’ are ‘workflows’ executing specific research questions or use cases that need FAIR data. Trains can be big: ‘Which data elements are most predictive of survival after head and neck cancer given all patients’ treated with protons in the Netherlands?’ or small and personal: ‘Is there a trial that I can join given my specific disease?’ Trains are built and maintained by the researcher(fig.2).</p>
+
+<p><img src="/figures/dataStationConnections.png" alt="Overview of the FAIR data infrastructure" title="Overview of the FAIR data infrastructure" /></p>
+
+<p><strong>Fig.2</strong>: Connection of the FAIR data stations with “trains” across the different proton centers in the Netherlands.</p>
+
 
 
       <footer class="site-footer">
