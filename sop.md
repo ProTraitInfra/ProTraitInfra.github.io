@@ -1,3 +1,7 @@
+# <span style="color:red">important message</span>
+
+Pending changes to the data FAIRifier tooling (due to the Open Clinica/Libre Clinica change) the SOP is at this moment not up to date. We apologise for the inconvenience and will update as soon as possible.  
+
 # Standard Operating Procedure (SOP) for setting up the FAIR data stations
 
 The goal of this document is to provide the necessary guidance when installing the ProTrait infrastructure via a detailed roadmap. We describe the steps needed prior, during and after the installation of the FAIR data stations in a proton therapy center. 
