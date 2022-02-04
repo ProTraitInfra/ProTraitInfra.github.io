@@ -9,5 +9,6 @@ The data that is collected for the ProTRAIT registry is described in item lists 
 
 ### Standard Operating Procedure
 
+⚠️<span style="color:red">The SOP is outdated pending changes to the tooling, an update will follow soon</span>⚠️
 Institutes that are interested in joining the ProTRAIT infrastructure should adhere to the Standard Operating Procedure (SOP) of the infrastructure. It can be found [here](https://docs.google.com/document/d/1hkW8ksyPkkTZlJYJNpCoaNgPOQjwOqUvcCb3xnyUn_M/edit?usp=sharing)
 
