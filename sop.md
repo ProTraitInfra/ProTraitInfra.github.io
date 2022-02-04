@@ -1,6 +1,6 @@
-# <span style="color:red">important message</span>
+# ⚠️<span style="color:red">Important message:</span>⚠️
 
-Pending changes to the data FAIRifier tooling (due to the Open Clinica/Libre Clinica change) the SOP is at this moment not up to date. We apologise for the inconvenience and will update as soon as possible.  
+Pending changes to the data FAIRifier tooling (due to the Open Clinica/Libre Clinica change) the SOP is at this moment not up to date. We apologise for the inconvenience and will update as soon as possible. 
 
 # Standard Operating Procedure (SOP) for setting up the FAIR data stations
 
